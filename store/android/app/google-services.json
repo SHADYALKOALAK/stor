@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1081179490294",
+    "project_id": "store-e9c6d",
+    "storage_bucket": "store-e9c6d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1081179490294:android:33c2bcf9ba79a70b1ce9d7",
+        "android_client_info": {
+          "package_name": "com.shadyalkoalk.store"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1081179490294-o9tqgc0ret9qfol7qqh17tdn49j0u9fa.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA6w2DBoj6c_wd5T7L-PBd9gAjMhb0XJjs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1081179490294-o9tqgc0ret9qfol7qqh17tdn49j0u9fa.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

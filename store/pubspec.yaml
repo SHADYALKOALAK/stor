@@ -40,6 +40,11 @@ dependencies:
   lottie: ^2.6.0
   #intrnet
   connectivity_plus: ^4.0.2
+  #animations:
+  flutter_animate: ^4.2.0+1
+
+
+  loading_animation_widget: ^1.2.0+4
 
 dev_dependencies:
   flutter_test:

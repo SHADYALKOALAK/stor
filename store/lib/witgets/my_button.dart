@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:loading_animation_widget/loading_animation_widget.dart';
 
 class MyButton extends StatefulWidget {
   final String text;
@@ -38,8 +39,11 @@ class _MyButtonState extends State<MyButton> {
       onTap: !widget.loader ? widget.onTap : null,
       child: widget.loader == true
           ? Center(
-              child: CircularProgressIndicator(
-                  color: Theme.of(context).primaryColor))
+              child: LoadingAnimationWidget.inkDrop(
+                color: Theme.of(context).primaryColor,
+                size: 30.h,
+              ),
+            )
           : Container(
               width: widget.width.w,
               height: widget.height,

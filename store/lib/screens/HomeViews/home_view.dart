@@ -2,6 +2,7 @@ import 'dart:async';
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:lottie/lottie.dart';
@@ -121,7 +122,10 @@ class _HomeViewState extends State<HomeView> with NavHelper {
                             buildBestSell(),
                           ],
                         )
-                      ],
+                      ].animate(
+                        interval: 50.ms,
+
+                      ).moveY(duration: const Duration(seconds: 1)),
                     ),
                   ),
                 ],
@@ -206,7 +210,8 @@ class _HomeViewState extends State<HomeView> with NavHelper {
                           return InkWell(
                             splashColor: Colors.transparent,
                             highlightColor: Colors.transparent,
-                            onTap: () => jump(context, ProductDetails(model: list[index]), false),
+                            onTap: () => jump(context,
+                                ProductDetails(model: list[index]), false),
                             child: ProductItem(model: list[index]),
                           );
                         },

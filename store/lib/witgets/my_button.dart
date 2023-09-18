@@ -39,8 +39,10 @@ class _MyButtonState extends State<MyButton> {
       onTap: !widget.loader ? widget.onTap : null,
       child: widget.loader == true
           ? Center(
-              child: LoadingAnimationWidget.inkDrop(
+              child: LoadingAnimationWidget.discreteCircle(
                 color: Theme.of(context).primaryColor,
+                secondRingColor: Colors.orange,
+                thirdRingColor: Colors.deepOrangeAccent,
                 size: 30.h,
               ),
             )

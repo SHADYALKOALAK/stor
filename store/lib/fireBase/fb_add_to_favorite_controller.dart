@@ -12,12 +12,10 @@ class FbAddToFavoriteController {
 
   ///CREATE
   Future<bool> toggle(BuildContext context, FavoriteModel model) async {
-    FavoriteProvider favoriteProvider =
-        Provider.of<FavoriteProvider>(context, listen: false);
+    FavoriteProvider favoriteProvider = Provider.of<FavoriteProvider>(context, listen: false);
     var favorites = await getAllFavorite();
 
-    int index = favorites.indexWhere(
-        (element) => element.productModel?.id == model.productModel?.id);
+    int index = favorites.indexWhere((element) => element.productModel?.id == model.productModel?.id);
     if (index == -1) {
       await store
           .collection(table)
